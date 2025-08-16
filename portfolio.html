@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manjula Venkata Sunil Kumar — Portfolio</title>
+  <style>
+    :root{
+      --accent:#ff7a00;
+      --bg: #fff7ef;
+      --card:#ffffff;
+      --text:#111;
+      --muted:#555;
+      --radius:14px;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:var(--text)}
+    .container{max-width:1000px;margin:30px auto;padding:28px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(0,0,0,0.08);overflow:hidden}
+    .header{display:flex;gap:20px;align-items:center;padding:28px;background:linear-gradient(90deg,rgba(255,122,0,0.06),rgba(255,122,0,0.02))}
+    .avatar{flex:0 0 140px}
+    .avatar img{width:140px;height:140px;object-fit:cover;border-radius:50%;border:6px solid white;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    .name{flex:1}
+    h1{margin:0;font-size:28px}
+    .meta{margin-top:6px;color:var(--muted);font-size:14px}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:22px;padding:28px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;padding:18px}.avatar{display:none}}
+
+    /* main column */
+    .section{margin-bottom:18px}
+    h2{margin:0 0 8px 0;font-size:18px;color:var(--text)}
+    p{margin:0;color:var(--muted);line-height:1.6}
+    .skills ul{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:8px 0;list-style:none}
+    .skills li{background:#fff2e6;padding:8px 10px;border-radius:8px;color:var(--text);font-size:13px}
+
+    .card-body{padding:18px}
+    .project{background:#fbfaf9;border-radius:10px;padding:12px;margin-bottom:10px}
+    .project h3{margin:0;font-size:15px}
+    .project p{margin:6px 0 0 0;font-size:14px;color:var(--muted)}
+
+    /* sidebar */
+    .aside{background:linear-gradient(180deg,#fff,#fff);padding:18px;border-left:1px solid rgba(0,0,0,0.03)}
+    .aside h3{font-size:15px;margin:0 0 10px 0}
+    .contact a{color:var(--accent);text-decoration:none}
+    .badge{display:inline-block;background:#fff2e6;color:var(--accent);padding:6px 8px;border-radius:8px;font-weight:600;margin-right:6px}
+
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:14px}
+
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="avatar">
+          <!-- Save your photo as 'sunil.jpg' next to this HTML file -->
+          <img src="sunil.jpg" alt="Manjula Venkata Sunil Kumar"/>
+        </div>
+        <div class="name">
+          <h1>Manjula Venkata Sunil Kumar</h1>
+          <div class="meta">Kadapa, Andhra Pradesh • +91 78159-95848 • <a href="mailto:sunilkumariu742@gmail.com">sunilkumariu742@gmail.com</a></div>
+          <div style="margin-top:10px">
+            <a class="btn" href="https://github.com/sunil7815/APEX-Files/tree/main" target="_blank">View GitHub</a>
+            <a class="btn" style="background:#333;margin-left:8px" href="https://www.linkedin.com/in/manjulasunilkumar" target="_blank">LinkedIn Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <main>
+          <div class="card-body">
+            <section class="section about">
+              <h2>About Me</h2>
+              <p>
+                I am an aspiring Python Full-Stack Developer with a B.Tech in Electronics & Communication Engineering (CGPA: 8.24). I love building responsive front-ends and robust back-ends — turning ideas into user-friendly digital products. I completed a focused Python Full-Stack internship with ExcelR and a Salesforce Developer virtual internship where I practiced Apex and LWC. I am committed to continuous learning and building impactful applications.
+              </p>
+            </section>
+
+            <section class="section skills">
+              <h2>Skills</h2>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (basics)</li>
+                <li>Python</li>
+                <li>Django / Flask</li>
+                <li>MySQL / MongoDB</li>
+                <li>Git & GitHub</li>
+                <li>Apex & LWC (Salesforce)</li>
+              </ul>
+            </section>
+
+            <section class="section projects">
+              <h2>Projects</h2>
+
+              <div class="project">
+                <h3>Knee Osteoarthritis Severity Prediction</h3>
+                <p>Built a CNN model using Keras/TensorFlow to predict KOA severity from X-ray images (KL grading). Added Grad-CAM visualizations and evaluated with accuracy and F1-score.</p>
+              </div>
+
+              <div class="project">
+                <h3>CRM for Laptop Rentals (Salesforce)</h3>
+                <p>Designed a CRM solution using Salesforce: custom objects, automation, email templates, and delivery tracking to improve rental workflows and customer engagement.</p>
+              </div>
+
+              <div class="project">
+                <h3>Python Full-Stack Apps</h3>
+                <p>Developed RESTful APIs with Django/Flask, integrated MySQL/MongoDB, and implemented responsive front-ends using HTML/CSS and JavaScript.</p>
+              </div>
+
+            </section>
+
+            <section class="section education">
+              <h2>Education</h2>
+              <p><strong>B.Tech — Electronics & Communication Engineering</strong><br/>
+              KSRM College of Engineering, Kadapa (2021–2025) • CGPA: 8.24</p>
+            </section>
+
+          </div>
+        </main>
+
+        <aside class="aside">
+          <div class="card-body">
+            <section class="section contact">
+              <h3>Contact</h3>
+              <p class="meta">Kadapa, Andhra Pradesh</p>
+              <p>📧 <a href="mailto:sunilkumariu742@gmail.com">sunilkumariu742@gmail.com</a></p>
+              <p>📞 +91 78159-95848</p>
+            </section>
+
+            <section class="section internships">
+              <h3>Internships</h3>
+              <p><strong>Python Full-Stack Intern — ExcelR</strong><br/>May–July 2024. Built RESTful APIs (Django/Flask/FastAPI), responsive UIs, and database integrations.</p>
+              <p style="margin-top:8px"><strong>Salesforce Developer — SmartBridge</strong><br/>Nov 2024–Jan 2025. Worked with Apex, LWC, and process automation; completed Superbadges.</p>
+            </section>
+
+            <section class="section certs">
+              <h3>Achievements & Certifications</h3>
+              <p class="badge">NPTEL: VLSI Design</p>
+              <p class="badge">PCB Design — APSSDC</p>
+              <p style="margin-top:8px;color:var(--muted);font-size:14px">Certificate of Completion — Python Full-Stack (ExcelR)</p>
+            </section>
+
+            <section class="section links">
+              <h3>Links</h3>
+              <p><a href="https://github.com/sunil7815/APEX-Files/tree/main" target="_blank">GitHub Repository</a></p>
+              <p><a href="https://www.linkedin.com/in/manjulasunilkumar" target="_blank">LinkedIn</a></p>
+            </section>
+
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        Crafted with ✨ by Sunil • Available for internships & junior developer roles
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
